@@ -1,4 +1,4 @@
-# angular-resource-plugin for webpack
+# webpack-angular-resource-plugin
 
 Require all AngularJS modules for a Webpack project and return an array of the module names that can be used as dependencies of 
 the main module. Can also batch require other resources such as style sheets and images.

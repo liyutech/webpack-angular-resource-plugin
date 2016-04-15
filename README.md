@@ -13,7 +13,7 @@ In the entry point where the main angular module is defined, such as index.js or
 <p>Create an instance of the plugin, passing the webpack require object to the constructor:</p>
 <p><i>const angularResourceUtil = new AngularResourcePlugin(require);</i></p>
 
-<p>Require all css and less files under the current directory:</p>
+<p>Require all css and less files under the current directory. The requiredModules function a variable number of arguments:</p>
 <p><i>angularResourceUtil.requiredModules('.css', '.less');</i></p>
 
 <p>Define the main Angular module. Also require all files whose name end with .controller.js which supposedy contain submodules.

@@ -1,5 +1,5 @@
 {
-  "name": "angular-resource-plugin",
+  "name": "webpack-angular-resource-plugin",
   "version": "0.0.1",
   "author": "Hao Qin <hqin@liyutech.com>",
   "description": "angular plugin providing a list of all angular controllers and the modules that belong to.",

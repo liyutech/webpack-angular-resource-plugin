@@ -4,11 +4,11 @@ Require all AngularJS modules for a Webpack project and return an array of the m
 the main module. Can also batch require other resources such as style sheets and images.
 
 <h3>Installation</h3>
-<i>npm install angular-resource-plugin --save-dev</i>
+<i>npm install webpack-angular-resource-plugin --save-dev</i>
 
 <h3>Usage Example</h3>
 In the entry point where the main angular module is defined, such as index.js or app.js, require the plugin:
-<p><i>var AngularResourcePlugin = require('angular-resource-plugin');</i></p>
+<p><i>var AngularResourcePlugin = require('webpack-angular-resource-plugin');</i></p>
 
 <p>Create an instance of the plugin, passing the webpack require object to the constructor:</p>
 <p><i>const angularResourceUtil = new AngularResourcePlugin(require);</i></p>

@@ -1,16 +1,36 @@
 {
-  "name": "webpack-angular-resource-plugin",
-  "version": "0.0.1",
+  "name": " ",
+  "version": "0.0.2",
   "author": "Hao Qin <hqin@liyutech.com>",
-  "description": "angular plugin providing a list of all angular controllers and the modules that belong to.",
+  "description": "Require all AngularJS modules for a Webpack project and return an array of the module names that can be used as dependencies of the main module. Can also batch require other resources such as style sheets and images.",
   "scripts": {
-    "test": "node ./index.js"
+    "test": "karma start"
   },
   "devDependencies": {
+    "angular-ui-router": "^0.2.18",
+    "angular-mocks": "^1.5.0",
+    "jasmine-core": "^2.4.1",
+    "phantomjs-prebuilt": "^2.1.7",
+    "css-loader": "^0.23.0",
+    "less-loader": "2.2.3",
+    "style-loader": "^0.13.0",
+    "karma": "^0.13.22",
+    "karma-coverage": "^0.5.5",
+    "karma-jasmine": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.24",
+    "karma-webpack": "^1.7.0",
+    "isparta-instrumenter-loader": "^1.0.0",
     "webpack": "^1.12.14"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/mit-license.php"
-  }]
+  "peerDependencies": {
+    "jasmine-core": "^2.4.1",
+    "phantomjs-prebuilt": "^2.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liyutech/webpack-angular-resource-plugin.git"
+  },
+  "license": "MIT"
 }

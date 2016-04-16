@@ -24,8 +24,8 @@ AngularResourcePlugin.prototype.requiredModules = function() {
 
 	}).map(function(key) {
 		var importModule = __context(key);
-		return importModule.default? importModule.default.name: '';
+		return importModule.default ? importModule.default.name : key;
 	});
-}
+};
 
 module.exports = AngularResourcePlugin;

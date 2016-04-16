@@ -7,8 +7,9 @@
     "test": "karma start"
   },
   "devDependencies": {
-    "angular-ui-router": "^0.2.18",
+    "angular": "^1.5.0",
     "angular-mocks": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
     "jasmine-core": "^2.4.1",
     "phantomjs-prebuilt": "^2.1.7",
     "css-loader": "^0.23.0",

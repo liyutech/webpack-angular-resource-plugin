@@ -18,6 +18,7 @@ In the entry point where the main angular module is defined, such as index.js or
 Notice that the module names are returned as an array and passed to the factory method as dependencies of the main module:</p>
 <p><i>var controllerContext = require.context('.', true, /\.controller\.js$/)</i></p>
 <p><i>module.exports.default = angular.module('app', angularResourceUtil.requireAll(controllerContext));</i></p>
+To run the tests for this project, execute the following command from the terminal at the root directory of the project:
 <p><i>npm test</i></p>
 <h3>License</h3>
 

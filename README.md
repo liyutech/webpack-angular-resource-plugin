@@ -24,4 +24,4 @@ Notice that the module names are returned as an array and passed to the factory 
 </p>
 <h3>License</h3>
 
-<p>MIT (<a>http://www.opensource.org/licenses/mit-license.php</a>)</p>s
+<p>MIT (<a>http://www.opensource.org/licenses/mit-license.php</a>)</p>

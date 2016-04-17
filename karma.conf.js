@@ -12,7 +12,11 @@ module.exports = function karmaConfig(config) {
       'PhantomJS'
     ],
     singleRun: true,
+    logLevel: config.LOG_DEBUG,
     webpack: require('./tests.webpack.config'),
+    webpackMiddleware: {
+      noInfo: 'errors-only'
+    },
     port: 9876
   });
 };

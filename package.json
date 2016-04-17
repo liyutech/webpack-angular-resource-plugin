@@ -3,6 +3,14 @@
   "version": "0.0.2",
   "author": "Hao Qin <hqin@liyutech.com>",
   "description": "Require all AngularJS modules for a Webpack project and return an array of the module names that can be used as dependencies of the main module. Can also batch require other resources such as style sheets and images.",
+  "keywords": [
+    "webpack",
+    "angular",
+    "resource",
+    "batch require",
+    "batch load",
+    "karma"
+  ],
   "scripts": {
     "test": "karma start"
   },

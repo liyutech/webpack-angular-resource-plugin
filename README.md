@@ -18,9 +18,7 @@ In the entry point where the main angular module is defined, such as index.js or
 Notice that the module names are returned as an array and passed to the factory method as dependencies of the main module:</p>
 <p><i>var controllerContext = require.context('.', true, /\.controller\.js$/)</i></p>
 <p><i>module.exports.default = angular.module('app', angularResourceUtil.requireAll(controllerContext));</i></p>
-<p>To run the tests for this plugin, execute the following command from the terminal at the root directory of the plugin:
-	<i>npm test</i>
-</p>
+<p><i>npm test</i></p>
 <h3>License</h3>
 
 <p>MIT (<a>http://www.opensource.org/licenses/mit-license.php</a>)</p>

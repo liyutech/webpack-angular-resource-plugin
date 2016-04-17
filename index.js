@@ -8,8 +8,8 @@
 module.exports = {
 	requireAll: function(requireContext) {
 		return requireContext.keys().map(function(key) {
-			var importModule = requireContext(key);
-			return importModule.default ? importModule.default.name : key;
+			var required = requireContext(key);
+			return required.default ? required.default.name : key;
 		});
 	}
 };

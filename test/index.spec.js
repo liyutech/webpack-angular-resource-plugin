@@ -5,30 +5,19 @@ describe("AngularResourcePlugin", function() {
 
 		var controllerContext = require.context('.', true, /\.controller\.js$/);
 		var controllerModules = angularResourceUtil.requireAll(controllerContext);
-		console.log('controllerModules ' + controllerModules);
 
 		var angular = require('angular');
 		var uiRouter = require('angular-ui-router');
 		controllerModules.push('uiRouter');
+		console.log('controllerModules ' + controllerModules);
+
 		var mainModule = angular.module('app', controllerModules);
 		expect(controllerModules).toEqual(['app.landing', 'app.login', 'uiRouter']);
 		expect(mainModule.requires).toEqual(controllerModules);
 
-
-		var req = require.context(".", true,  /.*/);
-
-		// require('css!./app');
-		console.log('required landing.css' + req.keys());
-
-		// var css = require("css!./app/landing/landing.css");
-
-		// console.log('css ' + css);
-
-		// var styleContext = require.context('..', true, /\.css$/);
-		// 	console.log('styleContext ' + styleContext.keys());
-
-		// var styles = angularResourceUtil.requireAll(styleContext);
-		// console.log('styles ' + styles);
-
+		var styleContext = require.context(".", true,  /.css$/);
+		var styles = angularResourceUtil.requireAll(styleContext);
+		console.log('styles ' + styles);
+		expect(styles).toEqual(['./app/landing/landing.css']);
 	});
 });

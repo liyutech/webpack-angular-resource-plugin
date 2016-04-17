@@ -22,7 +22,7 @@ To run the tests for this project, execute the following command from the termin
 <p><i>npm test</i></p>
 
 <p>
-For a more comprehensive example of how to use the plugin, check out  at <a href="https://github.com/liyutech/webpack-angular-template">this</a> webpack-angular-template project
+For a more comprehensive example of how to use the plugin, check out <a href="https://github.com/liyutech/webpack-angular-template">this</a> webpack-angular-template project.
 </p>
 <h3>License</h3>
 <p>MIT (<a>http://www.opensource.org/licenses/mit-license.php</a>)</p>

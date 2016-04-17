@@ -15,9 +15,15 @@ describe("AngularResourcePlugin", function() {
 		expect(controllerModules).toEqual(['app.landing', 'app.login', 'uiRouter']);
 		expect(mainModule.requires).toEqual(controllerModules);
 
-		var styleContext = require.context(".", true,  /.css$/);
+		var styleContext = require.context(".", true, /.(c|le)ss$/);
 		var styles = angularResourceUtil.requireAll(styleContext);
 		console.log('styles ' + styles);
-		expect(styles).toEqual(['./app/landing/landing.css']);
+		expect(styles).toEqual(['./app/home.less', './app/landing/landing.css']);
+
+
+		var imageContext = require.context(".", true, /\.(gif|jpg|jpeg|png)$/);
+		var images = angularResourceUtil.requireAll(imageContext);
+		console.log('images ' + images);
+		expect(images).toEqual([ './app/login/world-map.gif' ]);
 	});
 });

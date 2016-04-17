@@ -1,6 +1,6 @@
 {
   "name": "webpack-angular-resource-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Hao Qin <hqin@liyutech.com>",
   "description": "Require all AngularJS modules for a Webpack project and return an array of the module names that can be used as dependencies of the main module. Can also batch require other resources such as style sheets and images.",
   "keywords": [
@@ -16,12 +16,12 @@
   },
   "devDependencies": {
     "angular": "^1.5.0",
-    "angular-mocks": "^1.5.0",
     "angular-ui-router": "^0.2.18",
     "jasmine-core": "^2.4.1",
     "phantomjs-prebuilt": "^2.1.7",
     "css-loader": "^0.23.0",
     "less-loader": "2.2.3",
+    "file-loader": "^0.8.4",
     "style-loader": "^0.13.0",
     "karma": "^0.13.22",
     "karma-jasmine": "^0.3.8",
@@ -29,7 +29,6 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.24",
     "karma-webpack": "^1.7.0",
-    "isparta-instrumenter-loader": "^1.0.0",
     "webpack": "^1.12.14"
   },
   "peerDependencies": {

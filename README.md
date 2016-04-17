@@ -20,6 +20,9 @@ Notice that the module names are returned as an array and passed to the factory 
 <p><i>module.exports.default = angular.module('app', angularResourceUtil.requireAll(controllerContext));</i></p>
 To run the tests for this project, execute the following command from the terminal at the root directory of the project:
 <p><i>npm test</i></p>
-<h3>License</h3>
 
+<p>
+For a more comprehensive example of how to use the plugin, check out  at <a href="https://github.com/liyutech/webpack-angular-template">this</a> webpack-angular-template project
+</p>
+<h3>License</h3>
 <p>MIT (<a>http://www.opensource.org/licenses/mit-license.php</a>)</p>
